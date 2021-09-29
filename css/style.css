@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+
+header nav {
+  width: 90%;
+  position: relative;
+  display: block;
+  margin: auto;
+  background: none;
+  border: none;
+  box-shadow: none; }
+  header nav .divLogo {
+    margin-top: 3%; }
+    header nav .divLogo #logo {
+      width: 100px;
+      height: 100px;
+      background-image: url("../imagenes/logo.jpg");
+      border-radius: 50%; }
+  header nav .nav-item {
+    padding: 5% 5% 1% 0%; }
+    header nav .nav-item .nav-link {
+      color: #fc6913;
+      font-weight: bold;
+      font-size: 1.9rem;
+      margin-top: 3px; }
+      header nav .nav-item .nav-link:hover {
+        transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        color: #393e41; }
+    header nav .nav-item #pLogo {
+      color: #0679af;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: left;
+      width: 200px;
+      margin-right: 100px; }
+    header nav .nav-item .material-icons-outlined {
+      font-size: 2.5rem;
+      font-weight: bold; }
+
+.body {
+  background-image: url("../imagenes/fondo1.png");
+  background-repeat: repeat;
+  background-size: auto;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20%; }
+  .body main {
+    width: 100%; }
+    .body main #sushiTable {
+      width: 70%;
+      margin: auto;
+      margin-top: 2%;
+      box-shadow: 10px 4px 5px 5px grey; }
+    .body main h1 {
+      color: #383736;
+      font-size: 3rem;
+      text-align: center;
+      padding: 3%; }
+    .body main #productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: auto;
+      width: 60%; }
+    .body main .compra {
+      display: flex;
+      margin-bottom: 3%; }
+      .body main .compra .carrito {
+        width: 40%;
+        margin-top: 2%;
+        margin-right: 1%;
+        box-shadow: 10px 4px 5px 5px #686969;
+        font-size: 1.5rem;
+        padding: 2%;
+        border: 1px solid #686969;
+        margin: auto; }
+        .body main .compra .carrito h3 {
+          font-size: 2rem;
+          color: #fc6913;
+          font-weight: bold; }
+        .body main .compra .carrito .table .eliminarButton {
+          background: red;
+          color: #fff;
+          font-size: 2rem;
+          font-weight: bold;
+          border-radius: 60%;
+          border: none;
+          height: 30px;
+          width: 30px; }
+        .body main .compra .carrito .totalCompra {
+          color: #fc6913;
+          font-size: 1.7rem;
+          font-weight: bold; }
+        .body main .compra .carrito .finalizarCompra {
+          background: #067ac2;
+          color: #fff;
+          font-size: 1.7rem;
+          font-weight: bold;
+          border-radius: 20%;
+          border: none;
+          height: 40px;
+          width: 80px;
+          float: right; }
+    .body main .formulario {
+      display: none; }
+      .body main .formulario .formaPago {
+        width: 50%;
+        margin-top: 2%;
+        margin-left: 1%;
+        box-shadow: 10px 4px 5px 5px grey;
+        font-size: 1.5rem;
+        padding: 3%;
+        border: 1px solid #686969;
+        font-weight: bold;
+        margin: auto; }
+        .body main .formulario .formaPago h3 {
+          font-size: 2rem;
+          color: #fc6913;
+          font-weight: bold;
+          text-align: center; }
+        .body main .formulario .formaPago .usuario {
+          width: 400px;
+          height: 30px;
+          margin: 1%;
+          border: 2px solid #fc6913;
+          box-shadow: 2px 2px 2px 2px #a5a3a3; }
+        .body main .formulario .formaPago .input-card-number {
+          width: 50px;
+          height: 30px;
+          margin: 1%;
+          border: 2px solid #fc6913;
+          box-shadow: 2px 2px 2px 2px #a5a3a3; }
+        .body main .formulario .formaPago #card-holder {
+          width: 400px;
+          height: 30px;
+          border: 2px solid #fc6913;
+          box-shadow: 2px 2px 2px 2px #a5a3a3; }
+        .body main .formulario .formaPago .fieldset-expiration {
+          width: 500px;
+          display: flex; }
+          .body main .formulario .formaPago .fieldset-expiration .fVenc {
+            padding-top: 2%; }
+          .body main .formulario .formaPago .fieldset-expiration .select {
+            margin: 1%; }
+            .body main .formulario .formaPago .fieldset-expiration .select .card-expiration {
+              border: 2px solid #fc6913;
+              width: 70px;
+              height: 30px;
+              box-shadow: 2px 2px 2px 2px #a5a3a3; }
+        .body main .formulario .formaPago .fieldset-ccv {
+          margin-left: 5%;
+          padding-top: 1%; }
+          .body main .formulario .formaPago .fieldset-ccv .card-ccv {
+            border: 2px solid #fc6913;
+            width: 70px;
+            height: 30px;
+            box-shadow: 2px 2px 2px 2px #a5a3a3; }
+        .body main .formulario .formaPago .aceptar, .body main .formulario .formaPago .borrar {
+          background: #fc6913;
+          color: #fff;
+          font-size: 1.5rem;
+          font-weight: bold;
+          border-radius: 20%;
+          border: none;
+          height: 40px;
+          width: 80px;
+          margin-right: 5%;
+          float: right; }
+        .body main .formulario .formaPago h4 {
+          font-weight: bold; }
+        .body main .formulario .formaPago .borrar {
+          background: #ff995e;
+          width: 90px;
+          margin-right: 3%; }
+    .body main .scroll {
+      margin-bottom: 5%; }
+      .body main .scroll #scrollTopButton {
+        position: relative;
+        cursor: pointer; }
+
+footer {
+  width: 100%;
+  height: 30px;
+  padding: 2%; }
+  footer .pFooter {
+    text-align: center;
+    color: #f17917;
+    font-size: 2rem; }

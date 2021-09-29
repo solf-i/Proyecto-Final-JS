@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushi</title>
+   
+    <link rel="shortcut icon" href="" />
+    <meta
+      name="description"
+      content=""
+    />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Sol Ferri" />
+    <meta property="og:image" itemprop="image" href=" " />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:url" content="" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+    rel="stylesheet">
+
+    
+</head>
+
+<body class="body">
+    <header>
+        <nav id="nav">
+          <ul class="nav justify-content-center bg-transparent text-white">
+            <li  class="divLogo">
+              <img src="./imagenes/logo.jpg" alt="logoSushi" id="logo"/>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" id="pLogo"> KOI SUSHI</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#productos">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#carrito2"><button id="carrito"> <span class="material-icons-outlined" >
+                shopping_cart
+                </span></button></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+
+      <div id="sushiTable">
+        <img src="./imagenes/sushiTable1.jpg" alt="Plato con sushi" />
+      </div>
+
+      <h1>Armá tu propio menú!</h1>
+
+      <section id="productos">            
+      </section>
+      
+      <section class="compra">
+        <div class="carrito" id="carrito2">
+          <h3>Pedido</h3>
+            <table class="table">
+              <thead>
+                <tr class="lista">                  
+                  <th scope="col">Producto</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Cantidad</th>
+                  <th scope="col">Eliminar</th>
+                </tr>
+                
+              </thead>
+              <tbody id="listaCompra">                 
+              </tbody>             
+
+            </table>  
+            <div class="totalCompra"></div>
+           
+            <button  class="finalizarCompra" id="finCompra"> Comprar </button>                         
+                   
+        </div>        
+      </section>
+
+
+    <section class="formulario" id="mostrarForm">
+      <form class="formaPago" id="validar" autocomplete="off" novalidate>
+        <h3>Ingresá tus datos</h3><br>
+        <fieldset>
+          <label >Nombre y Apellido: </label> <input type="text" class="usuario"  id="nombreYapellido" required />
+          <br/><br>
+          <label>DNI: </label>
+          <input type="number" class="usuario"  id="dni" maxlength="12" required />
+          <br/><br>
+          <label>Telefono: </label>
+          <input type="number" class="usuario"  id="telefono" required />
+          <br/><br>
+          <label>Dirección: </label>
+          <input type="text"  class="usuario" id="direccion" required />
+        </fieldset><br>      
+
+        <h3>Pago con tarjeta de crédito / débito</h3>
+        <fieldset>
+          <label for="card-number">Número Tarjeta</label>
+          <input type="num" class="input-card-number" maxlength="4" />
+          <input type="num"  class="input-card-number" maxlength="4" />
+          <input type="num"  class="input-card-number" maxlength="4" />
+          <input type="num"  class="input-card-number" maxlength="4" />
+        </fieldset>   <br>   
+         <fieldset>
+          <label for="card-holder">Nombre y Apellido</label>
+          <input type="text" id="card-holder" />
+        </fieldset> <br>   
+        <fieldset class="fieldset-expiration">
+          <div class="fVenc">
+            <label for="card-expiration" >Fecha Vencimiento</label>
+          </div>
+          <div class="select">
+            <select class="card-expiration">
+              <option></option>
+              <option>01</option>
+              <option>02</option>
+              <option>03</option>
+              <option>04</option>
+              <option>05</option>
+              <option>06</option>
+              <option>07</option>
+              <option>08</option>
+              <option>09</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+            </select>
+          </div>
+          <div class="select">
+            <select class="card-expiration">
+              <option></option>
+              <option>2016</option>
+              <option>2017</option>
+              <option>2018</option>
+              <option>2019</option>
+              <option>2020</option>
+              <option>2021</option>
+              <option>2022</option>
+              <option>2023</option>
+              <option>2024</option>
+              <option>2025</option>
+            </select>
+          </div>
+          <div class="fieldset-ccv">
+            <label for="card-ccv">CCV</label>
+            <input type="text" class="card-ccv" maxlength="3" />
+          </div>
+        </fieldset>  <br>       
+        
+       <span> <input type="button" class="borrar" onclick="limpiarFormulario()" value="Borrar datos">     </span> 
+       
+        <button type="submit" class="aceptar" value="Enviar"> Aceptar</button>
+        <br><br>
+        <h4>Pago en efectivo: retira en el local.</h4>
+      </form>
+    </section>
+    
+     <section>
+       <div class="scroll">
+        <button id="scrollTopButton"> 
+          <span class="material-icons">
+            keyboard_double_arrow_up
+            </span>
+        </button>
+        </div>
+
+     </section>
+
+      
+
+      </main>  
+
+
+      <footer>
+        <div>
+          <p class="pFooter">&copy Sol Ferri 2021</p>
+        </div>
+      </footer>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

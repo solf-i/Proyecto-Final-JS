@@ -1,0 +1,59 @@
+header{
+    
+
+    nav{
+        width: 90%;
+        position: relative;
+        display: block;
+        margin:auto;
+        background: none;
+        border: none;
+        box-shadow: none;
+
+        .divLogo{
+            margin-top: 3%; 
+           
+               
+        #logo{                          
+            width: 100px;    
+            height: 100px;    
+            background-image: url("../imagenes/logo.jpg");
+            border-radius: 50%;           
+        }    
+    
+       }
+
+        .nav-item{            
+            padding: 5% 5% 1% 0%;
+           
+         .nav-link{
+            color:  #fc6913;
+            font-weight: bold;
+            font-size: 1.9rem;                    
+            margin-top: 3px;    
+
+            &:hover{
+                transform:scale(1.2);
+                -ms-transform:scale(1.2);
+                color: rgb(57, 62, 65);
+            }                  
+        }   
+        
+        #pLogo{
+            color: rgb(6, 121, 175);
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: left;
+            width: 200px;
+            margin-right: 100px;
+                        
+        }
+
+        .material-icons-outlined{
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+       
+    }
+}
+}
